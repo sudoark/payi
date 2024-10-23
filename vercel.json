@@ -3,7 +3,6 @@
     "builds": [
       {
         "src": "index.js",
-        "src": "dashboard.js",
         "use": "@now/node"
       }
     ],
@@ -11,7 +10,6 @@
       {
         "src": "/(.*)",
         "dest": "index.js",
-        "dest": "dashboard.js"
       }
     ]
   }
