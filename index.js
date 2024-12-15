@@ -31,7 +31,7 @@ app.post('/generate-pdf', (req, res) => {
         content: [
             {
                 columns: [
-                    { image: '../assets/logo.jpg', width: 50 }, // Use absolute path for image
+                    { image: './logo.jpg', width: 50 }, // Use absolute path for image
                     { text: 'MSV Public School Rambha', style: 'orgName', alignment: 'center' },
                     ''
                 ],
@@ -74,7 +74,7 @@ app.post('/generate-pdf', (req, res) => {
                 style: 'total',
                 color: data.balance.current_balance >= 0 ? 'green' : 'red'
             },
-            { image: '../assets/logo.jpg', alignment: 'right', width: 50, margin: [0, 50, 0, 0] },
+            { image: './logo.jpg', alignment: 'right', width: 50, margin: [0, 50, 0, 0] },
             {
                 text: 'Signature',
                 style: 'signature',
